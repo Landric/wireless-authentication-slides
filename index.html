@@ -251,18 +251,13 @@
                     <section>
                         <script src="http://gist-it.appspot.com/github/graingert/802.11r/raw/master/supplicant/wpa_supplicant.conf"></script>
                     </section>
-                    <section>
-                        <p><code>wpa_cli</code>, an application to control the WPA supplicant on Linux can be used to force a roam.</p>
-                    </section>
-                    <section>
-                        <script src="http://gist-it.appspot.com/github/graingert/802.11r/raw/master/supplicant/wpa_cli_dump.txt"></script>
-                    </section>
                 </section>
                 <section id="results">
                     <section>
                         <h2>802.1X Results</h2>
                         <p>Tested using the command line test <code>eapol_test</code> from <code>wpa_supplicant</code></p>
                         <p>Configured using a config file <code>ttls.conf</code>:</p>
+                        <!-- Should this be the same as the wpa_supplicant.conf file? -->
                         <pre>
                             <code>
                                 network={
@@ -284,6 +279,14 @@
                         <p>Tested using the command line test <code>eapol_test</code> from <code>wpa_supplicant</code></p>
                         <p>Then simply run the following from the command-line:</p>
                         <p><code>eapol_test -c ttls.conf -s testing123</code></p>
+                    </section>
+                    <section>
+                        <h2>Roaming Demonstration</h2>
+                        <p>With a real wireless client station</p>
+                        <p><code>wpa_cli</code>, an application to control the WPA supplicant on Linux can be used to force a roam.</p>
+                    </section>
+                    <section>
+                        <script src="http://gist-it.appspot.com/github/graingert/802.11r/raw/master/supplicant/wpa_cli_dump.txt"></script>
                     </section>
                     <section>
                         <h2>802.1X Results</h2>
