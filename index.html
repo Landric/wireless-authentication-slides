@@ -125,37 +125,29 @@
                     </section>
                     <section>
                         <h2>Config: Users</h2>
-                        <p>
-                            <br>
-                        </p>
-                        <p>
-                        </p>
-                        <pre>
-                            <code>
-                        #Give access to this user
-                        TomB        Cleartext-Password := "What a secure passphrase, eh?"
-                                    Reply-Message = "Hello there %{User-Name}! How's it going?"
+                        <pre><code>
+#Give access to this user
+TomB        Cleartext-Password := "What a secure passphrase, eh?"
+            Reply-Message = "Hello there %{User-Name}! How's it going?"
 
-                        #Don't give access to this user
-                                TomG    Auth-Type := Reject
-                                        Reply-Message = "Oh no you don't Grainger. Not again."
-                            </code>
-                        </pre>
+#Don't give access to this user
+        TomG    Auth-Type := Reject
+                Reply-Message = "Oh no you don't Grainger. Not again."
+                        </code></pre>
                     </section>
                     <section>
                         <h2>Config: Clients</h2>
-                        <p>
-                            <br>
-                        </p>
-                        <pre>
-                            <code>
-                                <br>client linuxproj {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ipaddr = 152.78.71.57<br>        secret = testing123<br>        require_message_authenticator = no<br>
-                                <br>        #Used to specify a specific Network Access Server type<br>        #(e.g. cisco, multitech, etc.)<br>        nastype = other<br>}<br>
-                            </code>
-                        </pre>
-                        <p>
-                            <br>
-                        </p>
+                        <pre><code>
+client linuxproj {
+    ipaddr = 152.78.71.57
+    secret = testing123
+    require_message_authenticator = no
+    
+    #Used to specify a specific Network Access Server type
+    #(e.g. cisco, multitech, etc.)
+    nastype = other
+    }
+                        </code></pre>
                     </section>
                     <section>
                         <h2>EAP-TTLS</h2>
