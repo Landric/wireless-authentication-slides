@@ -182,11 +182,12 @@
                     </section>
                     <section>
                         <h2>Authenticator</h2>
-                        <p>
-                            <ul>An application running on the network device, in case of WiFi a wireless access point</ul>
-                            <ul>Receives user credentials from the supplicant (username, passwd or digital certificate)</ul>
-                            <ul>Forwards them to the authentication server for verification</ul>
-                        </p>
+                        <ul>
+                            <li>An application running on the network device</li>
+                            <li>In case of WiFi a wireless access point</li>
+                            <li>Receives user credentials from the supplicant (username, passwd or digital certificate)</li>
+                            <li>Forwards them to the authentication server for verification</li>
+                        </ul>
                     </section>
                     <section>
                         <h2>The HW: Meraki Mini</h2>
@@ -210,16 +211,19 @@
                         <ul>
                             <li>A highly extensible GNU/Linux distribution for embedded devices</li>
                             <li>Provides a fully writable filesystem with package management</li>
-                            <li>OpenWrt Buildroot is used to generate a cross-compilation toolchain and a root filesystem</li>
+                            <li>OpenWrt Buildroot provided a cross-compilation toolchain and a root filesystem</li>
                         </ul>
                     </section>
                     <section>
                         <h2>The authenticator app: Hostapd</h2>
                         <ul>
-                            <li>hostapd is an IEEE 802.11 AP and IEEE 802.1XAuthenticator</li>
+                            <li>hostapd is an IEEE 802.11 AP and IEEE 802.1X Authenticator</li>
                             <li>We used the implementation from Open Wireless Linux</li>
                             <li>It supports WPA, WPA2, EAP, RADIUS authentication</li>
-                            <li>The file hostapd.conf contains all authentication parameters</li>
+                            <li>The file hostapd.conf contains all authentication parameters
+                            <ul>
+                                <li>Authentication Protocol. SSID and passwords. Radius server address...</li>
+                            </li><ul/>                                
                         </ul>
                     </section>
                 </section>
