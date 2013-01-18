@@ -183,11 +183,11 @@
                     <section>
                         <h2>Authenticator</h2>
                         <ul>
-                            <li>An application running on the network device</li>
-                            <li>In case of WiFi a wireless access point</li>
+                            <li>An application running on a network device</li>
+                            <li>In case of WiFi, a wireless access point</li>
                             <li>Receives user credentials from the supplicant (username, passwd or digital certificate)</li>
                             <li>Forwards them to the authentication server for verification</li>
-                            <li>If valid the user is allowed to access resources located on the protected side of the network</li>
+                            <li>If valid the user is allowed to access the protected side of the network</li>
                         </ul>
                     </section>
                     <section>
@@ -218,10 +218,10 @@
                     <section>
                         <h2>The authenticator app: Hostapd</h2>
                         <ul>
-                            <li>hostapd is an IEEE 802.11 AP and IEEE 802.1X Authenticator</li>
-                            <li>We used the implementation from Open Wireless Linux</li>
-                            <li>It supports WPA, WPA2, EAP, RADIUS authentication</li>
-                            <li>The file hostapd.conf contains all authentication parameters
+                            <li>An IEEE 802.11 AP and IEEE 802.1X Authenticator</li>
+                            <li>Implementation from Open Wireless Linux project</li>
+                            <li>Supports WPA, WPA2, EAP, RADIUS authentication</li>
+                            <li>All authentication parameters located in hostapd.conf file
                             <ul>
                                 <li>Authentication Protocol. SSID and passwords. Radius server address...</li>
                             </li><ul/>                                
