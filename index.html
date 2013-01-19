@@ -235,7 +235,16 @@ client linuxproj {
                             <span>Roaming Demonstration</span></br>
                             <small>With a <em>real</em> wireless client station</small>
                         </h2>
-                        <p><code>wpa_cli</code>, an application to control the WPA supplicant on Linux can be used to force a roam.</p>
+                    </section>
+                    <secion>
+                        <h2>Forcing and Demonstrating a Roam</h2>
+                        <ul>
+                            <li>Wireless clients roam when signal strengths changes</li>
+                            <li>So it's difficult to encourage a roam with both APs in range!</li>
+                            <li>The user is never informed that a roam happens.</li>
+                            <li>So it's difficult to demonstrate that it even happened</li>
+                            <li>Fortunately <code>wpa_cli</code> can be used to both demonstrate and force the roam.</li>
+                        </ul>
                     </section>
                     <section>
                         <script src="http://gist-it.appspot.com/github/graingert/802.11r/raw/master/supplicant/wpa_cli_dump.txt"></script>
