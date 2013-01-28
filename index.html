@@ -242,13 +242,18 @@ ttls {
                         </figure>
                     </section>
                     <section>
-                        <blockquote cite="http://en.wikipedia.org/wiki/Supplicant_%28computer%29">
-                            The supplicant is an entity ... that seeks to be authenticated by an authenticator attached to the other end of that link... In practice, a supplicant is a software application installed on an end-user's computer. The user invokes the supplicant and submits credentials to connect the computer to a secure network. If the authentication is successful, the authenticator typically allows the computer to connect to the network.
-                        </blockquote>
+                        <h2>Supplicant</h2>
+                        <ul>
+                            <li>Refers to the client agent that performs the authentication</li>
+                            <li>Usually a piece of software running on a client device</li>
+                            <li>In this case referring to the software: <code>wpa_supplicant</code></li>
+                            <li>Passes credentials to the authenticator</li>
+                            <li>Handles key management</li>
+                        </ul>
                     </section>
                     <section>
                         <ul>
-                            <li>The supplicant must be configured with the access point details.</li>
+                            <li><code>wpa_supplicant</code> must be configured with the access point details.</li>
                             <li>
                                 <code>FT-EAP</code> has been added as a key management option as part of the investigation into 802.11r
                             </li>
