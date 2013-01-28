@@ -15,6 +15,12 @@
         <!-- For syntax highlighting -->
         <link rel="stylesheet" href="lib/css/zenburn.css">
 
+        <!-- CSS Hack lolz -->
+        <style >
+            h2.lower{
+                text-transform: none;
+            }
+        </style>
         <!-- If the query includes 'print-pdf', use the PDF print sheet -->
         <script>
             document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
@@ -291,10 +297,10 @@ ttls {
                 </section>
                 <section id="80211r">
                     <section>
-                        <h2>802.11r</h2>  
+                        <h2 class="lower">802.11r: FAST BSS TRANSITION</h2>  
                     </section>
                     <section>
-                        <h2>802.11r</h2>
+                        <h2>Fast BSS Transition</h2>
                         <ul>
                             <li>802.11i with 802.1X re-authenticaiton is slow</li>
                             <li>802.11r is a method of reducing re-auth overhead</li>
@@ -302,7 +308,7 @@ ttls {
                         </ul>
                     </section>
                     <section>
-                        <h2>802.11r Key Management</h2>
+                        <h2 class="lower">802.11r KEY MANAGEMENT</h2>
                         <img src="images/r-keys.png"/>
                     </section>
 
